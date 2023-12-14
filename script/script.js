@@ -12,3 +12,44 @@ document.querySelector('.scroll-to-top').addEventListener('click', function(e) {
     e.preventDefault(); // 阻止 <a> 标签的默认跳转行为
     window.scrollTo({top: 0, behavior: 'smooth'}); // 平滑滚动到页面顶部
   });
+
+
+document.addEventListener('DOMContentLoaded', () => {
+const tabs = document.querySelectorAll('.tab-btn');
+const contents = document.querySelectorAll('.content');
+const line = document.querySelector('.line');
+
+function updateLine(tab) {
+    line.style.width = tab.offsetWidth + 'px';
+    line.style.left = tab.offsetLeft + 'px';
+}
+
+tabs.forEach((tab, index) => {
+    tab.addEventListener('click', () => {
+        // 更新激活的标签样式
+        tabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+
+        // 更新指示线位置
+        updateLine(tab);
+
+        // 显示对应的内容
+        contents.forEach(content => content.classList.remove('active'));
+        contents[index].classList.add('active');
+    });
+});
+
+// 初始化指示线位置
+const activeTab = document.querySelector('.tab-btn.active');
+if (activeTab) {
+    updateLine(activeTab);
+}
+
+// 窗口大小改变时更新指示线位置
+window.addEventListener('resize', () => {
+    const activeTab = document.querySelector('.tab-btn.active');
+    if (activeTab) {
+        updateLine(activeTab);
+    }
+});
+});

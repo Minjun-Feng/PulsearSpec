@@ -136,7 +136,7 @@
         display: block;
       }
     .product-pic{
-        top: 0px;
+        margin-top: 0px;
     }
     .specs-sheet{
         font-size: 20px;
