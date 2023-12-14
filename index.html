@@ -15,13 +15,13 @@
     <div class="header">
 		<div class="navbar">
 			<div class="left-section">
-				<a href="#"><img class="logo-pic" src="images/logo.png"></a>
+				<a href="#" class="scroll-to-top"><img class="logo-pic" src="images/logo.png"></a>
 				<div class="gradient-text">PulsearSpec</div>
 			</div>
 	
 			<div class="right-section">
 				<ul class="menu-links">
-					<li><a href="#">Home</a></li>
+					<li><a href="#" class="scroll-to-top">Home</a></li>
 					<li><a href="#">Products</a></li>
 					<li><a href="#">Contact</a></li>
 					<li class="language-item">
@@ -40,17 +40,16 @@
 		<p class="subtitle-name">Femtosecond Transient Absorption Spectrometer</p>
 	</div>
 	<div class="Product-area">
-		<div class="specs-sheet"><p>&#x2022 User-friendly control software</p><p>&#x2022 Spectral range 330 - 830 nm</p><p>&#x2022 Delay time of 6/12 ns option</p><p>&#x2022 Time resolution up to 100 fs</p></div>
+		<div class="specs-sheet">
+			<ul>
+				<li>User-friendly control software</li>
+				<li>Spectral range 330 - 830 nm</li>
+				<li>Delay time of 6/12 ns option</li>
+				<li>Time resolution up to 100 fs</li>
+			</ul>
+		</div>
 		<img class="product-pic" src="images/Pulsar-FRONT.png">
 	</div>
-    <script>
-		const header = document.querySelector(".header");
-        const hamburgerBtn = document.querySelector("#hamburger-btn");
-        const closeMenuBtn = document.querySelector("#close-menu-btn");
-        // Toggle mobile menu on hamburger button click
-        hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
-        // Close mobile menu on close button click
-        closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
-	</script>
+    <script src="script/script.js"></script>
 </body>
 </html>

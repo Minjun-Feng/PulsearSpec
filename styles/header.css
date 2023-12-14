@@ -15,7 +15,7 @@
 
 .navbar{
     width: 100%;
-    max-width: 1000px;
+    max-width: 1200px;
     display: flex; /* 使用 flex 布局 */
     justify-content: space-between; /* 两侧的元素分布在头部两端 */
     align-items: center; /* 垂直居中对齐 */
@@ -60,7 +60,8 @@
 .right-section #close-menu-btn {
     position: absolute;
     display: none;
-    color: #000;
+    color: wheat;
+    font-weight: bold;
     top: 20px;
     right: 20px;
     cursor: pointer;
@@ -106,7 +107,7 @@
       height: 100vh;
       max-width: 300px;
       width: 100%;
-      background: #fff;
+      background: #001331ab;
       position: fixed;
       left: -300px;
       top: 0;
@@ -124,14 +125,17 @@
     }
   
     .navbar .menu-links li a {
-      color: #000;
+        color: wheat;
       font-size: 1.1rem;
     }
     .navbar .menu-links a:hover {
-      color: #1dbf73;
+      color: white;
       background: none;
     }
     .navbar :is(#close-menu-btn, #hamburger-btn) {
         display: block;
       }
+    .product-pic{
+        top: 0px;
+    }
 }

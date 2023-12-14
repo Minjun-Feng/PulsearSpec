@@ -3,10 +3,12 @@
     margin: 0px;
     border: none;
     box-sizing: border-box;
-    
 }
+html {
+    scroll-behavior: smooth;
+  }
 body{
-    background-color: rgb(255, 255, 255);
+    background-color: #dfdfe65b;
     margin-top: 50px;
     font-family: soleil, 'Lucida Sans', 'Lucida Sans Regular';
 }
@@ -14,13 +16,11 @@ body{
     display: flex; /* 启用 flex 布局 */
     align-items: center;
     justify-content: space-between; /* 水平居中 */
-    max-width: 1000px;
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
     padding-top: 20px;
     padding-bottom: 10px;
-    background-color:white;
-
 }
 .title-name{
 
@@ -37,12 +37,12 @@ body{
     font-size: 20px;
     font-weight: bold;
     color: rgb(31, 128, 167);
-    padding-left: 20px
+    padding-right: 20px;
 }
 .Product-area {
     position: relative;
     width: 100%;
-    max-width: 1000px;
+    max-width: 1200px;
     background-image: linear-gradient(to left top, #001331 0%, #082446 10%, #6c91a4 30%, #c0e8e1 50%, #77e8f1 70%,  rgb(5, 145, 170) 100%);
 
     /*background-image: linear-gradient(90deg,rgba(0,37,74,1) 0%,rgba(1,161,211,1) 100%);*/
@@ -62,15 +62,17 @@ body{
     color: antiquewhite;
     margin-left: 15px;
 }
-.specs-sheet p {
-    margin-top: 20px; /* 顶部边距 */
+.specs-sheet ul li{
+    margin-top: 30px; /* 顶部边距 */
+    gap: 30px;
+    margin-left: 30px;
   }
 .product-pic{
     position: relative;
-    top: -40px;
+    top: -100px;
     width: 100%;
     align-self: center; /* 将图片在其容器中水平居中 */
-    max-width: 750px;
+    max-width: 900px;
     margin-top: 0px ;
     
 }
