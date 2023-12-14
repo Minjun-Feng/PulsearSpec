@@ -138,3 +138,64 @@ body{
     border-radius: 10px;
     transition: all .3s ease-in-out;
 }
+
+.overview-main {
+    color: #0056b3; /* Dark blue for the heading */
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.overview-main-p {
+    color: #333333; /* Dark grey for the text */
+    line-height: 1.6;
+    text-align: justify;
+    margin: 0 auto;
+    max-width: 700px; /* Restricting width for better readability */
+    padding: 10px 20px;
+    background-color: #f8f8f8; /* Light grey background for the paragraph */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.overview-tab {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    margin: auto;
+}
+
+.overview-tab p {
+    color: #333;
+    line-height: 1.6;
+}
+
+.overview-tab h4 {
+    color: #0056b3;
+    margin-top: 20px;
+}
+
+.overview-tab ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.overview-tab ul li {
+    background-color: #e0e0e0;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.overview-tab ul li p {
+    margin: 0;
+    color: #444;
+}
+
+/* Optional: Add a subtle hover effect for list items */
+.overview-tab ul li:hover {
+    background-color: #d4d4d4;
+}
