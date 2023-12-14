@@ -1,0 +1,53 @@
+.header {
+    color: wheat;
+    font-size: large;
+    
+    display: flex; /* 使用 flex 布局 */
+    justify-content: center; /* 两侧的元素分布在头部两端 */
+    width: 100%; /* 宽度设置为100% */
+    position: fixed; /* 固定在顶部 */
+    top: 0; /* 置顶 */
+    left: 0; /* 置左 */
+    background-color: #170d33; /* 背景颜色，根据需要调整 */
+    border: none;
+    z-index: 1000; /* 确保 header 在最上层 */
+}
+
+.header-box{
+    width: 100%;
+    max-width: 1000px;
+    display: flex; /* 使用 flex 布局 */
+    justify-content: space-between; /* 两侧的元素分布在头部两端 */
+    align-items: center; /* 垂直居中对齐 */
+}
+
+.left-section {
+    display: flex;
+    align-items:end; /* 垂直居中对齐 */
+    margin: 5px 10px 5px 20px;
+    border: none;
+
+}
+
+.right-section {
+    font-weight: bold;
+    display: flex;
+    width: 300px;
+    justify-content: space-evenly; 
+}
+.logo-pic {
+    /* 根据需要调整图片大小 */
+    height: 40px;
+    width: auto;
+}
+
+.gradient-text {
+    font-size: 25px; /* 设置字体大小 */
+    font-style: italic;
+    font-weight: bold;
+    background: -webkit-linear-gradient(left, rgb(228, 27, 27), rgb(34, 136, 143)); /* 创建从左到右的红到蓝的渐变 */
+    -webkit-background-clip: text; /* 应用背景到文字 */
+    color: transparent; /* 设置文字颜色为透明 */
+    background-clip: text; /* 标准语法 */
+    padding-right: 3px;
+}
