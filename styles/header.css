@@ -13,7 +13,7 @@
     z-index: 1000; /* 确保 header 在最上层 */
 }
 
-.header-box{
+.navbar{
     width: 100%;
     max-width: 1000px;
     display: flex; /* 使用 flex 布局 */
@@ -29,13 +29,52 @@
 }
 
 .right-section {
-
     font-weight:400;
     display: flex;
-    width: 400px;
-    justify-content: space-evenly;
-
+    align-items: center;
+    justify-content: space-between;
 }
+.menu-links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+    margin-right: 20px;
+  }
+  
+.menu-links li a {
+    text-decoration: none;
+    transition: 0.2s ease;
+  }
+.language-item a {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+.right-section #hamburger-btn {
+    cursor: pointer;
+    display: none;
+    font-size: 1.7rem;
+    margin-right: 20px;
+  }
+.right-section #close-menu-btn {
+    position: absolute;
+    display: none;
+    color: #000;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 1.7rem;
+  }
+.menu-links a {
+    color: inherit;        /* 链接颜色与周围文本颜色相同 */
+    text-decoration: none; /* 去除下划线 */
+    background-color: transparent; /* 初始背景色透明 */
+    transition: color 0.2s; /* 背景色变化过渡时间 */
+  }
+.menu-links a:hover {
+    color: white;
+  }
 .logo-pic {
     /* 根据需要调整图片大小 */
     height: 40px;
@@ -51,4 +90,48 @@
     color: transparent; /* 设置文字颜色为透明 */
     background-clip: text; /* 标准语法 */
     padding-right: 3px;
+}
+@media screen and (max-width: 900px) {
+    .header.show-mobile-menu::before {
+      content: "";
+      height: 100%;
+      width: 100%;
+      position: fixed;
+      left: 0;
+      top: 0;
+      backdrop-filter: blur(5px);
+    }
+  
+    .navbar .menu-links {
+      height: 100vh;
+      max-width: 300px;
+      width: 100%;
+      background: #fff;
+      position: fixed;
+      left: -300px;
+      top: 0;
+      display: block;
+      padding: 75px 40px 0;
+      transition: left 0.2s ease;
+    }
+  
+    .header.show-mobile-menu .navbar .menu-links {
+      left: 0;
+    }
+  
+    .navbar .menu-links li {
+      margin-bottom: 30px;
+    }
+  
+    .navbar .menu-links li a {
+      color: #000;
+      font-size: 1.1rem;
+    }
+    .navbar .menu-links a:hover {
+      color: #1dbf73;
+      background: none;
+    }
+    .navbar :is(#close-menu-btn, #hamburger-btn) {
+        display: block;
+      }
 }
