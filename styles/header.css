@@ -91,7 +91,7 @@
     background-clip: text; /* 标准语法 */
     padding-right: 3px;
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 650px) {
     .header.show-mobile-menu::before {
       content: "";
       height: 100%;
