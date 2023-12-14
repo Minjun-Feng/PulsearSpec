@@ -92,6 +92,35 @@
     background-clip: text; /* 标准语法 */
     padding-right: 3px;
 }
+.right-section ul li{
+    position: relative;
+    padding: 15px 0px;
+}
+.right-section ul li ul {
+    position: absolute;
+    left: 0;
+    top: 20px;
+    width: 200px;
+    margin-top: 25px;
+    display:none ;
+
+}
+.right-section ul li ul li {
+    width: 100%;
+    border-top: 1px solid rgb(148, 146, 146);
+    list-style-type: none;
+    padding: 10px 5px;
+    border-radius: 10px;
+    background-color: #001331d3;
+    
+}
+.material-symbols-outlined {
+    font-size: 18px; /* Adjust the size as needed */
+}
+.right-section ul li:focus-within > ul,
+.right-section ul li:hover > ul {
+    display: initial;
+}
 @media screen and (max-width: 650px) {
     .header.show-mobile-menu::before {
       content: "";
@@ -123,7 +152,15 @@
     .navbar .menu-links li {
       margin-bottom: 30px;
     }
-  
+    .navbar .menu-links li ul{
+        position: relative;
+        width: 100%;
+      }
+      .navbar .menu-links li ul li{
+        margin-bottom: 5px;
+        margin-top: 5px;
+        padding-left: 20px;
+      }
     .navbar .menu-links li a {
         color: wheat;
       font-size: 1.1rem;

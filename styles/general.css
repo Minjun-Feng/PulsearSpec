@@ -199,3 +199,40 @@ body{
 .overview-tab ul li:hover {
     background-color: #d4d4d4;
 }
+
+
+footer {
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #001331;
+    padding: 20px;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer p {
+    color: #979797;
+    margin: 5px 0;
+}
+
+footer div {
+    margin: 10px 0;
+}
+
+/* Specific styles for 'Back to Top' link */
+footer a[href="#top"] {
+    font-weight: bold;
+}
