@@ -138,4 +138,10 @@
     .product-pic{
         top: 0px;
     }
+    .specs-sheet{
+        font-size: 20px;
+    }
+    .subtitle-name{
+        font-size: 16px;
+    }
 }
