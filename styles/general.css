@@ -3,11 +3,12 @@
     margin: 0px;
     border: none;
     box-sizing: border-box;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular';
+    
 }
 body{
     background-color: rgb(255, 255, 255);
     margin-top: 50px;
+    font-family: soleil, 'Lucida Sans', 'Lucida Sans Regular';
 }
 .product-title{
     display: flex; /* 启用 flex 布局 */
@@ -22,7 +23,7 @@ body{
 
 }
 .title-name{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular';
+
     font-size: 50px;
     font-weight: normal;
     color: rgb(2, 51, 63);
@@ -33,7 +34,6 @@ body{
     color: transparent; /* 设置文字颜色为透明 */
 }
 .subtitle-name{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 20px;
     font-weight: bold;
     color: rgb(31, 128, 167);
