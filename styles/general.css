@@ -3,7 +3,7 @@
     margin: 0px;
     border: none;
     box-sizing: border-box;
-    font-family: Roboto, Arial;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular';
 }
 body{
     background-color: rgb(255, 255, 255);
@@ -22,7 +22,7 @@ body{
 
 }
 .title-name{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular';
     font-size: 50px;
     font-weight: normal;
     color: rgb(2, 51, 63);
@@ -40,23 +40,37 @@ body{
     padding-left: 20px
 }
 .Product-area {
+    position: relative;
     width: 100%;
     max-width: 1000px;
     background-image: linear-gradient(to left top, #001331 0%, #082446 10%, #6c91a4 30%, #c0e8e1 50%, #77e8f1 70%,  rgb(5, 145, 170) 100%);
 
     /*background-image: linear-gradient(90deg,rgba(0,37,74,1) 0%,rgba(1,161,211,1) 100%);*/
     display: flex; /* 启用 flex 布局 */
-    justify-content: center; /* 水平居中 */
-    align-items: center; /* 垂直居中 */
+    flex-direction: column;
     height: 100%; /* 如果需要，设置一个高度 */
     margin-left: auto;
     margin-right: auto;
-    padding-top: 200px;
-    padding-bottom: 30px;
+    padding-top: 10px;
+    padding-bottom: 0px;
     border-radius: 20px;
 }
+
+.specs-sheet{
+    
+    font-size: 25px;
+    color: antiquewhite;
+    margin-left: 15px;
+}
+.specs-sheet p {
+    margin-top: 20px; /* 顶部边距 */
+  }
 .product-pic{
+    position: relative;
+    top: -40px;
     width: 100%;
+    align-self: center; /* 将图片在其容器中水平居中 */
     max-width: 750px;
+    margin-top: 0px ;
     
 }

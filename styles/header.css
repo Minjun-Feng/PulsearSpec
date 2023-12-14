@@ -8,7 +8,7 @@
     position: fixed; /* 固定在顶部 */
     top: 0; /* 置顶 */
     left: 0; /* 置左 */
-    background-color: #170d33; /* 背景颜色，根据需要调整 */
+    background-color: #001331d3; /* 背景颜色，根据需要调整 */
     border: none;
     z-index: 1000; /* 确保 header 在最上层 */
 }
@@ -32,7 +32,7 @@
 .right-section {
     font-weight: bold;
     display: flex;
-    width: 300px;
+    width: 400px;
     justify-content: space-evenly; 
 }
 .logo-pic {
