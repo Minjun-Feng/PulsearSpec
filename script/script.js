@@ -15,41 +15,48 @@ document.querySelector('.scroll-to-top').addEventListener('click', function(e) {
 
 
 document.addEventListener('DOMContentLoaded', () => {
-const tabs = document.querySelectorAll('.tab-btn');
-const contents = document.querySelectorAll('.content');
-const line = document.querySelector('.line');
+    const tabs = document.querySelectorAll('.tab-btn');
+    const contents = document.querySelectorAll('.content');
+    const line = document.querySelector('.line');
 
-function updateLine(tab) {
-    line.style.width = tab.offsetWidth + 'px';
-    line.style.left = tab.offsetLeft + 'px';
-}
+    function updateLine(tab) {
+        const tabRect = tab.getBoundingClientRect();
+        const containerRect = tab.parentNode.getBoundingClientRect();
+    
+        line.style.width = tabRect.width + 'px';
+        line.style.left = (tabRect.left - containerRect.left) + 'px';
+        line.style.top = (tabRect.top - containerRect.top + tabRect.height) + 'px'; // Adjusted to position the line below the tab
+    }
+    
+    // Rest of your code remains the same...
+    
 
-tabs.forEach((tab, index) => {
-    tab.addEventListener('click', () => {
-        // 更新激活的标签样式
-        tabs.forEach(t => t.classList.remove('active'));
-        tab.classList.add('active');
+    tabs.forEach((tab, index) => {
+        tab.addEventListener('click', () => {
+            // 更新激活的标签样式
+            tabs.forEach(t => t.classList.remove('active'));
+            tab.classList.add('active');
 
-        // 更新指示线位置
-        updateLine(tab);
+            // 更新指示线位置
+            updateLine(tab);
 
-        // 显示对应的内容
-        contents.forEach(content => content.classList.remove('active'));
-        contents[index].classList.add('active');
+            // 显示对应的内容
+            contents.forEach(content => content.classList.remove('active'));
+            contents[index].classList.add('active');
+        });
     });
-});
 
-// 初始化指示线位置
-const activeTab = document.querySelector('.tab-btn.active');
-if (activeTab) {
-    updateLine(activeTab);
-}
-
-// 窗口大小改变时更新指示线位置
-window.addEventListener('resize', () => {
+    // 初始化指示线位置
     const activeTab = document.querySelector('.tab-btn.active');
     if (activeTab) {
         updateLine(activeTab);
     }
-});
+
+    // 窗口大小改变时更新指示线位置
+    window.addEventListener('resize', () => {
+        const activeTab = document.querySelector('.tab-btn.active');
+        if (activeTab) {
+            updateLine(activeTab);
+        }
+    });
 });

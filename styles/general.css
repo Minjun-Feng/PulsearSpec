@@ -87,11 +87,15 @@ body{
     margin-right: auto;
     background-color: #08244613;
     border-radius: 20px;
+    margin-bottom: 50px;
+    padding-bottom: 100px;
+
 }
 
 .tab-box {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     border-bottom: 2px solid rgba(229,229,229);
@@ -148,10 +152,10 @@ body{
 
 .overview-main-p {
     color: #333333; /* Dark grey for the text */
-    line-height: 1.6;
+    line-height: 2;
     text-align: justify;
     margin: 0 auto;
-    max-width: 700px; /* Restricting width for better readability */
+    max-width: 900px; /* Restricting width for better readability */
     padding: 10px 20px;
     background-color: #f8f8f8; /* Light grey background for the paragraph */
     border-radius: 5px;
@@ -163,44 +167,87 @@ body{
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    max-width: 700px;
+    max-width: 900px;
     margin: auto;
 }
 
 .overview-tab p {
     color: #333;
-    line-height: 1.6;
+    line-height: 2;
 }
 
 .overview-tab h4 {
     color: #0056b3;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-.overview-tab ul {
-    list-style-type: none;
-    padding: 0;
+.overview-tab table {
+    width: 100%;
+    border-collapse: collapse;
 }
 
-.overview-tab ul li {
+.overview-tab table td {
     background-color: #e0e0e0;
-    margin-bottom: 10px;
     padding: 10px;
     border-radius: 4px;
     box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px; /* For spacing between rows */
 }
 
-.overview-tab ul li p {
-    margin: 0;
-    color: #444;
+.overview-tab table tr:hover td {
+    background-color: #d4d4d4; /* Hover effect */
 }
 
-/* Optional: Add a subtle hover effect for list items */
-.overview-tab ul li:hover {
-    background-color: #d4d4d4;
+/* Optional: Style for first column to align text to the right */
+.overview-tab table td:first-child {
+    text-align: right;
+    font-weight: bold; /* Optional: to differentiate the parameter names */
 }
 
+/* Tab under specs */
+#specs {
+    margin: 0 auto;
+    max-width: 900px;
+}
 
+#specs table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    margin-top: 20px;
+}
+
+#specs th {
+    background-color: #0056b3;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+}
+
+#specs td {
+    padding: 20px;
+    border-top: 1px solid #ccc;
+    line-height: 1.6;
+}
+
+#specs tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#specs tr:hover {
+    background-color: #e8e8e8;
+}
+
+/* Style for the specification description column to align text to the top */
+#specs td:nth-child(2) {
+    vertical-align: top;
+}
+#specs tr td:first-child, #specs tr th:first-child {
+    width: 30%; /* or any other specific width */
+}
+
+/* Footer */
 footer {
     width:100%;
     display: flex;
