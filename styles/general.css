@@ -222,12 +222,12 @@ body{
 #specs th {
     background-color: #0056b3;
     color: white;
-    padding: 20px;
-    font-size: 20px;
+    padding: 10px;
+    font-size: 18px;
 }
 
 #specs td {
-    padding: 20px;
+    padding: 10px;
     border-top: 1px solid #ccc;
     line-height: 1.6;
 }

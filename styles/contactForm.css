@@ -12,8 +12,8 @@
     height: 100%; /* Adjust height as needed */
     z-index: 1000; /* Ensure it's above other elements */
     /* Other styling */
-    background: #00133159;
-    backdrop-filter: blur(5px);
+    background: #001331af;
+
 }
 
 .form-container{
@@ -26,6 +26,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #001331af;
 }
 
 .form-container form{
@@ -33,8 +34,6 @@
     justify-content: center;
     box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
     border-radius: 15px;
-
-    backdrop-filter: blur(10px);
     flex-wrap: wrap;
     padding: 20px;
 }
@@ -43,6 +42,7 @@
     color: #fff;
     font-weight: 500;
     margin-top: 20px;
+    margin-bottom: 20px;
     width: 100%;
     text-align: center;
 }

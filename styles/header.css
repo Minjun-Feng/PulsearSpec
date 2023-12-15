@@ -10,7 +10,7 @@
     left: 0; /* 置左 */
     background-color: #001331d3; /* 背景颜色，根据需要调整 */
     border: none;
-    z-index: 1000; /* 确保 header 在最上层 */
+    z-index: 500; /* 确保 header 在最上层 */
 }
 
 .navbar{
