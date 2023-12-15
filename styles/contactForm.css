@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+@keyframes slideDown {
+    from {
+        top: -100%;
+        opacity: 0;
+    }
+    to {
+        top: 50%;
+        opacity: 1;
+    }
+}
+
 /* Modal styling */
 .modal {
     display: none;
@@ -12,8 +23,18 @@
     height: 100%; /* Adjust height as needed */
     z-index: 1000; /* Ensure it's above other elements */
     /* Other styling */
-    background: #001331af;
-
+    background: #0013318c;
+}
+.modal::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    backdrop-filter: blur(10px); /* Apply the blur effect */
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    z-index: -1; /* Ensures the pseudo-element is behind the modal content */
 }
 
 .form-container{
@@ -26,7 +47,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #001331af;
+    background-color: #0013316c;
+    border-radius: 20px;
+    animation: slideDown 0.5s ease-out;
 }
 
 .form-container form{
