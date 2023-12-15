@@ -70,7 +70,7 @@ body{
   }
 .product-pic{
     position: relative;
-    width: 100%;
+    width: 90%;
     align-self: center; /* 将图片在其容器中水平居中 */
     max-width: 900px;
     margin-bottom: 50px ;
