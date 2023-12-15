@@ -10,6 +10,7 @@
 	<link href="https://fonts.cdnfonts.com/css/soleil" rel="stylesheet">
 	<link rel="stylesheet" href="styles/general.css">
 	<link rel="stylesheet" href="styles/header.css">
+	<link rel="stylesheet" href="styles/contactForm.css">
 </head>
 <body>
     <div class="header">
@@ -29,7 +30,7 @@
 							<li><a href="#">Microscopy extension</a></li>
 						</ul>
 					</li>
-					<li><a href="#">Contact</a></li>
+					<li><a href="#contactForm" id="contactLink">Contact</a></li>
 					<li class="language-item">
 					  <a href="#">
 						<span class="material-symbols-outlined">language</span>English
@@ -45,6 +46,26 @@
 			</div>
 		</div>
     </div>
+	<!-- Modal Structure -->
+	<div id="contactForm" class="modal">
+		<div class="form-container">
+			<form>
+				<h1>Contact Us Form</h1>
+				<input type="text" id="firstName" placeholder="First Name" required>
+				<input type="text" id="lastName" placeholder="Last Name" required>
+				<input type="email" id="email" placeholder="Email" required>
+				<input type="text" id="mobile" placeholder="Mobile" required>
+				<h4>Type Your Message Here...</h4>
+				<textarea required></textarea>
+				<!-- Position the buttons next to each other in a div for better control -->
+				<div class="button-group">
+					<input type="submit" value="Send" id="sendButton">
+					<span class="close">Cancel</span>
+				</div>
+			</form>
+		</div>
+		</div>
+  	</div>
 	<div class="product-title">
 		<p class="title-name">Pulsar</p>
 		<p class="subtitle-name">Femtosecond Transient Absorption Spectrometer</p>

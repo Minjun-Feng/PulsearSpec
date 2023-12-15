@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Modal styling */
+.modal {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%; /* Adjust as needed */
+     /* Maximum width */
+    height: 100%; /* Adjust height as needed */
+    z-index: 1000; /* Ensure it's above other elements */
+    /* Other styling */
+    background: #00133159;
+    backdrop-filter: blur(5px);
+}
+
+.form-container{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 670px;
+    min-height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container form{
+    display: flex;
+    justify-content: center;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    border-radius: 15px;
+
+    backdrop-filter: blur(10px);
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.form-container form h1{
+    color: #fff;
+    font-weight: 500;
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.form-container form input{
+    width: 40%;
+    height: 40px;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    margin-bottom: 10px;
+    background: none;
+    border-bottom: 2px solid #fff;
+}
+
+.form-container form input::placeholder{
+    color: #ddd;
+}
+
+.form-container form #lastName,
+.form-container form #mobile{
+    margin-left: 20px;
+}
+
+.form-container form h4{
+    color: #fff;
+    font-weight: 300;
+    width: 83%;
+    margin-top: 20px;
+}
+
+.form-container form textarea{
+    background: none;
+    border: none;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    font-weight: 200;
+    font-size: 15px;
+    padding: 10px;
+    outline: none;
+    width: 83%;
+    min-height: 80px;
+    max-height: 80px;
+}
+
+textarea::-webkit-scrollbar{
+    width: 1em;
+}
+
+textarea::-webkit-scrollbar-thumb{
+    background-color: rgba(194,194,194,0.713);
+}
+
+.form-container form .button-group {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: top;
+    /* Additional styling as needed */
+}
+
+
+.form-container form #sendButton{
+    border: none;
+    background: #fff;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #333;
+    width: 100px;
+    transition: 0.3s;
+    margin-top: 30px;
+}
+
+.form-container form #sendButton:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.close {
+    height: 40px;
+    border: none;
+    background: #ff6666; /* Red color for cancel button */
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #fff;
+    width: 90px;
+    padding-top: 10px;
+    padding-left: 12px;
+    transition: 0.3s;
+    margin-top: 30px;
+  }
+  
+
+  .close:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}

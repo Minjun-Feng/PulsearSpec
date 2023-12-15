@@ -184,7 +184,8 @@ body{
 
 .overview-tab table {
     width: 100%;
-    border-collapse: collapse;
+    border-collapse: separate;
+    border-spacing: 3px 10px; /* Horizontal and vertical spacing */
 }
 
 .overview-tab table td {

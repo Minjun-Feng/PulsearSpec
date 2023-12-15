@@ -60,3 +60,17 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+// Click to get contact form
+
+document.getElementById('contactLink').onclick = function() {
+    document.getElementById('contactForm').style.display = 'block';
+  };
+  document.getElementsByClassName('close')[0].onclick = function() {
+    document.getElementById('contactForm').style.display = 'none';
+  };
+// Click to get contact form
+  document.getElementById('cancelButton').addEventListener('click', function() {
+    document.querySelector('.modal').style.display = 'none';
+});
+  
