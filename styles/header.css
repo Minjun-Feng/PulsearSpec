@@ -76,6 +76,10 @@
 .menu-links a:hover {
     color: white;
   }
+.material-symbols-outlined {
+    transition: transform 0.3s ease; /* Adjust the duration as needed */
+}
+
 .logo-pic {
     /* 根据需要调整图片大小 */
     height: 40px;
@@ -95,6 +99,7 @@
 .right-section ul li{
     position: relative;
     padding: 15px 0px;
+    cursor: pointer;
 }
 .right-section ul li ul {
     position: absolute;
@@ -117,6 +122,7 @@
 .material-symbols-outlined {
     font-size: 18px; /* Adjust the size as needed */
 }
+
 .right-section ul li:focus-within > ul,
 .right-section ul li:hover > ul {
     display: initial;

@@ -1,4 +1,4 @@
-
+//Set for hamburgerBtn
 const header = document.querySelector(".header");
 const hamburgerBtn = document.querySelector("#hamburger-btn");
 const closeMenuBtn = document.querySelector("#close-menu-btn");
@@ -7,13 +7,30 @@ hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobil
 // Close mobile menu on close button click
 closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
 
+//
+const productsLink = document.querySelector('.products-link');
+const subNavbar = document.querySelector('.sub-navbar');
+const icon = productsLink.querySelector('.material-symbols-outlined');
+
+// Function to toggle icon
+function toggleIcon(show) {
+    icon.style.transform = show ? 'rotate(180deg)' : 'rotate(0deg)';
+}
+
+// Event listeners
+productsLink.addEventListener('mouseover', () => toggleIcon(true));
+productsLink.addEventListener('mouseout', () => toggleIcon(false));
+subNavbar.addEventListener('mouseover', () => toggleIcon(true));
+subNavbar.addEventListener('mouseout', () => toggleIcon(false));
+
+
 // 平滑滚动到页面顶部
 document.querySelector('.scroll-to-top').addEventListener('click', function(e) {
     e.preventDefault(); // 阻止 <a> 标签的默认跳转行为
     window.scrollTo({top: 0, behavior: 'smooth'}); // 平滑滚动到页面顶部
   });
 
-
+// Set for tab indicator line
 document.addEventListener('DOMContentLoaded', () => {
     const tabs = document.querySelectorAll('.tab-btn');
     const contents = document.querySelectorAll('.content');
@@ -26,10 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
         line.style.width = tabRect.width + 'px';
         line.style.left = (tabRect.left - containerRect.left) + 'px';
         line.style.top = (tabRect.top - containerRect.top + tabRect.height) + 'px'; // Adjusted to position the line below the tab
-    }
-    
-    // Rest of your code remains the same...
-    
+    }    
 
     tabs.forEach((tab, index) => {
         tab.addEventListener('click', () => {
