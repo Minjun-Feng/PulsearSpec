@@ -181,7 +181,7 @@ body{
     margin: 0 auto;
     max-width: 900px; /* Restricting width for better readability */
     padding: 10px 20px;
-    background-color: #f8f8f8; /* Light grey background for the paragraph */
+    background-color: #eeeeee; /* Light grey background for the paragraph */
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
