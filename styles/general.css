@@ -84,6 +84,15 @@ body{
     margin-bottom: 50px ;
     margin-top:100px;
 }
+.pulsar-oem-pic{
+    position: relative;
+    width: 100%;
+    align-self: center; /* 将图片在其容器中水平居中 */
+    max-width: 900px;
+    margin-bottom: 20px ;
+    margin-top:50px;
+}
+
 .tab-container {
     max-width: 1200px;
     width: 100%;
