@@ -231,6 +231,17 @@ body{
 }
 
 /* Tab under specs */
+.product-sheet-box {
+    
+    height: 250px;
+    background-color: #eeeeee;
+    margin-top: 50px;
+    padding-top: 20px;
+    padding-left: 50px;
+}
+.product-sheet-img {
+    width: 15%;
+}
 #specs {
     margin: 0 auto;
     max-width: 900px;
