@@ -23,8 +23,20 @@ document.addEventListener('DOMContentLoaded', function() {
         .catch(error => console.error('Error fetching the file:', error));
 });
 
+document.getElementById('toggleYAxis').addEventListener('click', function() {
+    var button = this;
+    if (button.textContent === 'linear') {
+        button.textContent = 'log';
+    } else {
+        button.textContent = 'linear';
+    }
+});
+
 document.getElementById('csvFileInput').addEventListener('change', function(event) {
     const file = event.target.files[0];
+    if (file) {
+        document.getElementById('fileNameDisplay').textContent = `File: ${file.name}`;
+    }
     const reader = new FileReader();
 
     reader.onload = function(e) {
