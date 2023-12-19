@@ -15,7 +15,7 @@ body{
     font-size: large;
     
     display: flex; /* 使用 flex 布局 */
-    justify-content: space-around; /* 两侧的元素分布在头部两端 */
+    gap: 100px;
     align-items: center;
     width: 100%; /* 宽度设置为100% */
     position: fixed; /* 固定在顶部 */
@@ -28,7 +28,7 @@ body{
 .left-section {
     display: flex;
     align-items:end; /* 垂直居中对齐 */
-    margin: 5px 10px 5px 5px;
+    margin: 5px 10px 5px 10px;
     border: none;
 }
 .logo-pic {
@@ -77,8 +77,6 @@ body{
     width:40%;
 
 }
-
-
 
 .main-panel, .projection-panel {
     position: relative;
