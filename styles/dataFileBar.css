@@ -83,21 +83,6 @@ body{
     justify-content: center;
 }
 
-{
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    width: 80px;
-    justify-content: center;
-    background-color: #291b1b;
-    border: 1px solid #756d6d;
-    border-radius: 5px;
-    padding: 10px 20px;
-    cursor: pointer;
-    color: wheat;
-    z-index: 100;
-}
-
 .yscale-btn:hover,.delay-xscale-btn:hover {
     background-color: #ebe9e9;
 }
