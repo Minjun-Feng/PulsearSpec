@@ -13,9 +13,8 @@ body{
 .file-menue {
     color: wheat;
     font-size: large;
-    
     display: flex; /* 使用 flex 布局 */
-    gap: 100px;
+    gap: 10%;
     align-items: center;
     width: 100%; /* 宽度设置为100% */
     position: fixed; /* 固定在顶部 */
@@ -109,6 +108,9 @@ body{
 }
 
 @media screen and (max-width: 650px) {
+    .remind-note {
+        display: none;
+    }
     .main-panel{
         flex-direction: column;
     }
