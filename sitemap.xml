@@ -5,4 +5,9 @@
 		<priority>1.00</priority>
 		<lastmod>2023-12-21</lastmod>
 	</url>
+	<url>
+		<loc>https://www.pulsearspec.com/tool.html</loc>
+		<priority>0.50</priority>
+		<lastmod>2023-12-21</lastmod>
+	</url>
 </urlset>
