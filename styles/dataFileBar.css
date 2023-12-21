@@ -66,14 +66,14 @@ body{
     margin-right: 8px;
 }
 .contourplot {
-    width:60%;
+    width:50%;
     height:800px;
 
 }
 
 .projection-panel {
     display: block;
-    width:40%;
+    width:50%;
 
 }
 
