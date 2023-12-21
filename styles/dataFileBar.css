@@ -82,18 +82,17 @@ body{
     justify-content: center;
 }
 
-.yscale-btn:hover,.delay-xscale-btn:hover {
+.yscale-btn:hover,.projection-panel button:hover {
     background-color: #ebe9e9;
 }
-.yscale-btn, .delay-xscale-btn {
+.yscale-btn, .projection-panel button{
     position: absolute;
-
     width: 80px;
     justify-content: center;
     background-color: #ffffff;
     border: 1px solid #756d6d;
     border-radius: 5px;
-    padding: 10px 20px;
+    padding: 8px 20px;
     cursor: pointer;
     color: rgb(27, 24, 18);
     z-index: 200;
@@ -103,10 +102,33 @@ body{
     left: 20px;
 }
 .delay-xscale-btn {
-    bottom: 10px;
-    left: 200px;
+    bottom: 310px;
+    left: 40px;
 }
-
+.save-curve-btn {
+    top: 60px;
+    right: 100px;
+}
+.clear-plots-btn{
+    top: 60px;
+    right: 10px;
+}
+.save-curve-delay-btn {
+    bottom: 310px;
+    right: 100px;
+}
+.clear-plots-delay-btn{
+    bottom: 310px;
+    right: 10px;
+}
+.copy-wavelength-data {
+    top: 300px;
+    right: 10px;
+}
+.copy-delay-data {
+    bottom: 50px;
+    right: 10px;
+}
 @media screen and (max-width: 650px) {
     .remind-note {
         display: none;
