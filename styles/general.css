@@ -242,6 +242,14 @@ body{
 .product-sheet-img {
     width: 15%;
 }
+.youtube-video {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    max-width: 510px;
+    margin-left: auto;
+    margin-right: auto;
+}
 #specs {
     margin: 0 auto;
     max-width: 900px;
