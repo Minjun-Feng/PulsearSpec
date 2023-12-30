@@ -187,4 +187,11 @@
     .subtitle-name{
         font-size: 16px;
     }
+    .PhaseLock-area{
+      flex-direction: column;
+    }
+    .phase-lock-left,
+    .phase-lock-right {
+      width: 100%;
+    }
 }
