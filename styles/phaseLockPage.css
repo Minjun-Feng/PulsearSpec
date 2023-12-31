@@ -35,8 +35,7 @@
 
 .phase-lock-left{
     width: 50%;
-    margin-left: 10px;
-    margin-right: 10px;
+
     border: 2px solid rgb(245, 245, 245);
     border-radius: 10px;
 }
