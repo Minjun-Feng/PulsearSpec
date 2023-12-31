@@ -29,6 +29,7 @@
     border-radius: 20px;
     display: flex;
     box-sizing: border-box;
+    background-color: #ffffff;
 
 }
 
@@ -36,7 +37,7 @@
     width: 50%;
     margin-left: 10px;
     margin-right: 10px;
-    border: 2px solid rgb(233, 233, 233);
+    border: 2px solid rgb(245, 245, 245);
     border-radius: 10px;
 }
 
@@ -150,7 +151,7 @@ padding-bottom: 10px;
   line-height: 2;
   text-align: justify;
   margin: 0 auto;
-  max-width: 900px; /* Restricting width for better readability */
+  max-width: 1000px; /* Restricting width for better readability */
   padding: 10px 20px;
   background-color: #eeeeee; /* Light grey background for the paragraph */
   border-radius: 5px;
