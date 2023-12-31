@@ -84,16 +84,37 @@
     transform: scale(1.2); /* Slightly increase size on hover */
   }
 
-  .phase-lock-right p{
+.phase-lock-right p{
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.phase-lock-right ul{
+  margin-left: 20px;
+}
+.phase-lock-right li{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 
-    margin-top: 20px;
-    margin-bottom: 10px;
-  }
-  .phase-lock-right ul{
-    margin-left: 20px;
-  }
-  .phase-lock-right li{
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
+.phase-lock-intro {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #08244613;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    padding-bottom: 100px;
+
+}
+.phase-lock-intro img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+}
 
