@@ -11,15 +11,13 @@
 }
 
 .title-bar a {
-    text-decoration: none; /* 移除默认的下划线 */
-    cursor: pointer; /* 始终显示为指针样式 */
-    color: rgb(94, 93, 93); /* 设置超链接的颜色，可根据需要更改 */
-    /* 可以添加其他样式，如字体大小、颜色等 */
+    text-decoration: none;
+    cursor: pointer; 
+    color: rgb(94, 93, 93); 
   }
   
 .title-bar a:hover {
-    text-decoration: underline; /* 鼠标悬停时出现下划线 */
-    /* 可以添加其他悬停效果，如颜色变化等 */
+    text-decoration: underline; 
   }
 .PhaseLock-area{
     width: 100%;
@@ -37,12 +35,9 @@
 .phase-lock-left{
     width: 50%;
     margin-left: 10px;
+    margin-right: 10px;
     border: 2px solid rgb(233, 233, 233);
     border-radius: 10px;
-}
-.phase-lock-right{
-    width: 50%;
-    margin-left: 10px;
 }
 
 .PhaseLock-pic{
@@ -83,7 +78,14 @@
 .phase-lock-left li:hover img {
     transform: scale(1.2); /* Slightly increase size on hover */
   }
-
+.phase-lock-right{
+    width: 50%;
+    padding-left: 20px;
+}
+.phase-lock-right h3{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 .phase-lock-right p{
   margin-top: 20px;
   margin-bottom: 10px;
@@ -112,9 +114,69 @@
 
 }
 .phase-lock-intro img{
+  max-width: 500px;
+  width: 100%;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 500px;
+
+}
+.phase-lock-intro h1 {
+color: #d6a505; /* Dark blue for the heading */
+text-align: center;
+margin-top: 20px;
+margin-bottom: 20px;
+padding-top: 10px;
+padding-bottom: 10px;
+}
+.phase-lock-intro p {
+  color: #333333; /* Dark grey for the text */
+  line-height: 2;
+  text-align: justify;
+  margin: 0 auto;
+  max-width: 900px; /* Restricting width for better readability */
+  padding: 10px 20px;
+  background-color: #eeeeee; /* Light grey background for the paragraph */
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+.pahse-lock-spec{
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+.pahse-lock-spec table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  margin-top: 20px;
+}
+
+.pahse-lock-spec th {
+  background-color: #9c8e12;
+  color: white;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.pahse-lock-spec td {
+  padding: 10px;
+  border-top: 1px solid #ccc;
+  line-height: 1.6;
+}
+
+.pahse-lock-spec tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.pahse-lock-spec tr:hover {
+  background-color: #e8e8e8;
+}
+
+.pahse-lock-spec td:nth-child(2) {
+  vertical-align: top;
+}
+.pahse-lock-spec tr td:first-child, .pahse-lock-spec tr th:first-child {
+  width: 30%; /* or any other specific width */
+}
