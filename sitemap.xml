@@ -6,14 +6,9 @@
 		<lastmod>2024-01-03</lastmod>
 	</url>
 	<url>
-		<loc>https://www.pulsearspec.com/tool.html</loc>
+		<loc>https://www.pulsearspec.com/phaselock.html</loc>
 		<priority>0.50</priority>
-		<lastmod>2023-12-31</lastmod>
-	</url>
-	<url>
-		<loc>https://www.pulsearspec.com/phaselock-cn.html</loc>
-		<priority>0.50</priority>
-		<lastmod>2024-01-05</lastmod>
+		<lastmod>2024-01-02</lastmod>
 	</url>
 	<url>
 		<loc>https://www.pulsearspec.com/index-cn.html</loc>
@@ -21,8 +16,13 @@
 		<lastmod>2024-01-03</lastmod>
 	</url>
 	<url>
-		<loc>https://www.pulsearspec.com/phaselock.html</loc>
+		<loc>https://www.pulsearspec.com/phaselock-cn.html</loc>
 		<priority>0.50</priority>
-		<lastmod>2024-01-02</lastmod>
+		<lastmod>2024-01-05</lastmod>
+	</url>
+	<url>
+		<loc>https://www.pulsearspec.com/tool.html</loc>
+		<priority>0.50</priority>
+		<lastmod>2023-12-31</lastmod>
 	</url>
 </urlset>
