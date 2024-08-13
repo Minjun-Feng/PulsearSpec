@@ -203,8 +203,8 @@ padding-bottom: 10px;
 }
 
 .pahse-lock-spec td:nth-child(2) {
-  vertical-align: top;
+  vertical-align: middle;
 }
 .pahse-lock-spec tr td:first-child, .pahse-lock-spec tr th:first-child {
-  width: 30%; /* or any other specific width */
+  width: 20%; /* or any other specific width */
 }
