@@ -6,27 +6,7 @@
 		<lastmod>2025-03-23</lastmod>
 	</url>
 	<url>
-		<loc>https://www.pulsearspec.com/software-cn.html</loc>
-		<priority>0.50</priority>
-		<lastmod>2025-03-23</lastmod>
-	</url>
-	<url>
-		<loc>https://www.pulsearspec.com/software.html</loc>
-		<priority>0.50</priority>
-		<lastmod>2025-03-23</lastmod>
-	</url>
-	<url>
-		<loc>https://www.pulsearspec.com/spectrometer-cn.html</loc>
-		<priority>0.50</priority>
-		<lastmod>2025-03-23</lastmod>
-	</url>
-	<url>
-		<loc>https://www.pulsearspec.com/phaselock.html</loc>
-		<priority>0.50</priority>
-		<lastmod>2025-03-23</lastmod>
-	</url>
-	<url>
-		<loc>https://www.pulsearspec.com/index-cn.html</loc>
+		<loc>https://www.pulsearspec.com/tool.html</loc>
 		<priority>0.50</priority>
 		<lastmod>2025-03-23</lastmod>
 	</url>
@@ -36,7 +16,27 @@
 		<lastmod>2025-03-23</lastmod>
 	</url>
 	<url>
-		<loc>https://www.pulsearspec.com/tool.html</loc>
+		<loc>https://www.pulsearspec.com/index-cn.html</loc>
+		<priority>0.50</priority>
+		<lastmod>2025-03-23</lastmod>
+	</url>
+	<url>
+		<loc>https://www.pulsearspec.com/phaselock.html</loc>
+		<priority>0.50</priority>
+		<lastmod>2025-03-23</lastmod>
+	</url>
+	<url>
+		<loc>https://www.pulsearspec.com/spectrometer-cn.html</loc>
+		<priority>0.50</priority>
+		<lastmod>2025-03-23</lastmod>
+	</url>
+	<url>
+		<loc>https://www.pulsearspec.com/software.html</loc>
+		<priority>0.50</priority>
+		<lastmod>2025-03-23</lastmod>
+	</url>
+	<url>
+		<loc>https://www.pulsearspec.com/software-cn.html</loc>
 		<priority>0.50</priority>
 		<lastmod>2025-03-23</lastmod>
 	</url>
