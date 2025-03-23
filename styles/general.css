@@ -10,7 +10,8 @@ html {
 body{
     background-color: #dfdfe65b;
     margin-top: 50px;
-    font-family: soleil, 'Lucida Sans', 'Lucida Sans Regular';
+    font-family: Poppins, 'Lucida Sans', 'Lucida Sans Regular';
+    
 }
 .product-title{
     display: flex; /* 启用 flex 布局 */
