@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(du -sh /d/OneDrive/Programming/Webpage/PulsearSpec/downloads/*)",
+      "Bash(git -C /d/OneDrive/Programming/Webpage/PulsearSpec log --oneline)",
+      "Bash(git -C /d/OneDrive/Programming/Webpage/PulsearSpec remote -v)"
+    ]
+  }
+}
