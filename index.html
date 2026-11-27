@@ -27,6 +27,7 @@
 	<link rel="stylesheet" href="styles/general.css">
 	<link rel="stylesheet" href="styles/header.css">
 	<link rel="stylesheet" href="styles/contactForm.css">
+	<link rel="stylesheet" href="styles/theme.css">
 </head>
 <body>
     <div class="header">
@@ -85,22 +86,23 @@
 			</form>
 		</div>
 		</div>
-	<div class="product-title">
-		<p class="title-name">Pulsar</p>
-		<p class="subtitle-name">Femtosecond Transient Absorption Spectrometer</p>
-	</div>
-	<div class="Product-area">
-		<div class="specs-sheet">
-			<ul>
-				<li>All-in-one box design</li>
-				<li>User-friendly control software</li>
-				<li>330&ndash;1600 nm white-light probe</li>
-				<li>6 or 12 ns delay window, extendable to ms</li>
-			</ul>
+	<section class="hero">
+		<p class="hero-eyebrow">Femtosecond Transient Absorption Spectrometer</p>
+		<h1 class="hero-title">Pulsar</h1>
+		<p class="hero-tagline">Ultrafast spectroscopy, all in one box.</p>
+		<div class="hero-actions">
+			<a href="#contactForm" class="btn contact-open">Contact us</a>
+			<a href="#product-tabs" class="link-arrow" data-tab="1">View specs &rsaquo;</a>
 		</div>
-		<img class="product-pic" src="images/Pulsar-FRONT.png" alt="Pulsar transient absorption spectrometer device picture">
-	</div>
-	<div class="tab-container">
+		<img class="hero-pic" src="images/Pulsar-FRONT.png" alt="Pulsar transient absorption spectrometer device picture">
+	</section>
+	<section class="stats">
+		<div><b>330&ndash;1600 nm</b><span>White-light probe range</span></div>
+		<div><b>6 / 12 ns</b><span>Delay window, extendable to ms</span></div>
+		<div><b>14 fs</b><span>Delay line resolution</span></div>
+		<div><b>All-in-one</b><span>Box design, user-friendly control software</span></div>
+	</section>
+	<div class="tab-container" id="product-tabs">
 		<div class="tab-box">
 			<button class="tab-btn active">Overview</button>
 			<button class="tab-btn">Specs</button>
