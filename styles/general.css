@@ -234,15 +234,24 @@ body{
 
 /* Tab under specs */
 .product-sheet-box {
-    height: 100%;
+    display: flex;
+    align-items: center;  /* 垂直居中 */
+    gap: 30px;            /* 控制间距 */
     background-color: #eeeeee;
     margin-top: 50px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 50px;
+    padding: 20px 0 20px 50px;
 }
+.product-sheet-box a {
+    display: flex;
+    flex-direction: column; /* 让图片在上、文字在下 */
+    align-items: center;
+    text-decoration: none;
+}
+
 .product-sheet-img {
-    width: 10%;
+    width: 100px; /* 固定大小 */
+    height: auto;
+    margin-bottom: 10px;
 }
 .youtube-video {
     display: flex;
