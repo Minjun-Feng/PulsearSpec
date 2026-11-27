@@ -35,7 +35,7 @@
     <div class="header">
 		<div class="navbar">
 			<div class="left-section">
-				<a href="#" class="scroll-to-top"><img class="logo-pic" src="images/logo.png"></a>
+				<a href="#" class="scroll-to-top"><img class="logo-pic" src="images/logo.png" alt="PulsearSpec logo"></a>
 				<div class="gradient-text">PulsearSpec</div>
 			</div>
 	
@@ -51,14 +51,14 @@
 							<li><a href="software-cn.html">软件</a></li>
 						</ul>
 					</li>
-					<li><a href="tool.html">工具</a></li>
+					<li><a href="tool.html">数据查看</a></li>
 					<li><a href="#contactForm" id="contactLink">联系我们</a></li>
 					<li class="language-item">
 					  <a href="#">
 						<span class="material-symbols-outlined">language</span>中文
 					  </a>
 					  <ul>
-						<li><a href="index.html">英语</a></li>
+						<li><a href="index.html">English</a></li>
 						<li><a href="#">中文</a></li>
 					  </ul>
 					</li>
@@ -77,9 +77,10 @@
 				<input type="text" name="First Name" id="firstName" placeholder="名字" required>
 				<input type="text" name="Last Name" id="lastName" placeholder="姓氏" required>
 				<input type="email" name="email" id="email" placeholder="电子邮箱" required>
+				<input type="text" name="Institution" id="institution" placeholder="单位 / 公司">
 				<input type="text" name="Mobile" id="mobile" placeholder="手机号码">
-				<h4>在此输入您的信息...</h4>
-				<textarea name="message" required></textarea>
+				<h4>留言内容</h4>
+				<textarea name="message" placeholder="请简要介绍您的激光系统和实验需求" required></textarea>
 				<!-- 为了更好的控制，将按钮放在一个div中 -->
 				<div class="button-group">
 					<input type="submit" value="发送" id="sendButton">
@@ -87,7 +88,6 @@
 				</div>
 			</form>
 		</div>
-	</div>
 	</div>
 	
 	<div class="product-title">
@@ -99,8 +99,8 @@
 			<ul>
 				<li>一体化设计</li>
 				<li>简洁的控制软件</li>
-				<li>检测范围 330 - 1600 nm</li>
-				<li>时间窗口 6/12 ns</li>
+				<li>白光探测范围 330&ndash;1600 nm</li>
+				<li>时间窗口 6/12 ns，可扩展至毫秒级</li>
 			</ul>
 		</div>
 		<img class="product-pic" src="images/Pulsar-FRONT.png" alt="Pulsar瞬态吸收光谱仪设备图片">
@@ -118,7 +118,7 @@
 			<div class="content active">
 				<h1 class="overview-main">概览</h1>
 				<p class="overview-main-p">
-					Pulsar是一款自动化飞秒瞬态吸收光谱仪。它设计用于配合各种放大的飞秒激光器使用，包括高能量的钛宝石放大器和高重复率的Yb放大器。结合我们精心设计的相位锁定装置，Pulsar提供了无与伦比的性能和实验便利。
+					Pulsar是一款自动化飞秒瞬态吸收光谱仪。它设计用于配合各种放大的飞秒激光器使用，包括高能量的钛宝石放大器和高重复率的Yb放大器。结合我们精心设计的相位锁定装置，Pulsar兼顾高质量数据与简便的自动化操作。
 				</p>
 				<div>
 					<h1 class="overview-sub">一体化盒式设计</h1>
@@ -143,7 +143,7 @@
 					<h1 class="overview-sub" id="TAM">TAM扩展</h1>
 					<p class="overview-main-p">
 						<img class="pulsar-oem-pic" src="images/Pulsar-TAM-pic.png" alt="瞬态吸收显微镜扩展布局与控制软件">
-						瞬态吸收显微镜（TAM）扩展是一项先进技术，旨在提供无与伦比的时间和空间分辨率。这种增强对于研究材料中激发态的扩散过程至关重要。我们的创新TAM设计自豪地成为首个应用共轭成像技术的产品。这一开创性方法显著提高了成像质量并改善了时间分辨率，为该领域树立了新标准。我们的TAM扩展为深入的材料分析和研究开辟了新途径，提供了对微观层面动态过程的精确追踪。欲了解更多关于我们的TAM扩展如何帮助您的研究及其应用信息，请随时与我们联系。<br>
+						瞬态吸收显微镜（TAM）扩展在Pulsar飞秒时间分辨率的基础上增加了空间分辨能力，可用于追踪材料中激发态的扩散过程。我们的TAM设计采用共轭成像技术，提高了成像质量和时间分辨率。欢迎联系我们，了解TAM如何应用于您的研究。<br>
 						<img class="pulsar-oem-pic" src="images/Pulsar-TAM-decay.png" alt="TAM结果显示激发态扩散伴随FWHM展宽">
 					</p>
 				</div>
@@ -235,7 +235,7 @@
 						</tr>
 						<tr>
 						  <td>数据采集软件</td>
-						  <td>实时观测数据采集和光谱动态变化，数据点平均化，多曲线动态对比，啁啾校正，零点时间校正功能，单指数或多指数功率指数全局拟合以及其他模式的数据拟合程序</td>
+						  <td>实时观测数据采集和光谱动态变化，数据点平均化，多曲线动态对比，啁啾校正，零点时间校正功能，单指数及多指数全局拟合</td>
 						</tr>
 						<tr>
 						  <td>扩展功能</td>
@@ -247,7 +247,7 @@
 						  <th colspan="2" style="text-align:center;">特性</th>
 						</tr>
 						<tr>
-						  <td>更多扩展功能</td>
+						  <td>样品操作</td>
 						  <td>
 							<ul>
 							  <li>具备可编辑运动轨迹的自动二维电子控制防损伤样品台</li>
@@ -262,7 +262,7 @@
 			<div class="content">
 				<h1 class="overview-main">尺寸</h1>
 				<p class="overview-main-p">
-					Pulsar设计用于适应光学实验室，并且最适合放置在光学台上。它的宽敞设计为客户提供了多种可能性，以实施一些自制的设计实验。<br>
+					Pulsar设计放置于标准光学平台上方，开放式布局便于搭建自定义实验配置。<br>
 					<img class="dimension-pic" src="images/Pulsar-dimension.png" alt="Pulsar瞬态吸收光谱仪的尺寸大小">
 				</p>
 
@@ -270,7 +270,7 @@
 			<div class="content">
 				<h1 class="overview-main">文档</h1>
 				<p class="overview-main-p">
-					想获取更多相关文档以及仪器控制和数据处理软件，请与我们联系。我们还提供了数据处理软件，使结果可视化快速且准确。以下软件要求提前下载并安装 <a href="https://www.ni.com/en/support/downloads/software-products/download.labview-runtime.html?srsltid=AfmBOopzsxnfI7m6HgZ0krZ8X49PQ2MA6CVJMm36FnOLkAdJJwrxBxPp">LabVIEW Runtime 2018 64-bit</a>。<br>
+					产品资料如下，其他文档可联系我们获取。我们同时提供仪器控制和数据处理软件，可快速、准确地实现结果可视化。以下软件需要提前下载并安装 <a href="https://www.ni.com/en/support/downloads/software-products/download.labview-runtime.html?srsltid=AfmBOopzsxnfI7m6HgZ0krZ8X49PQ2MA6CVJMm36FnOLkAdJJwrxBxPp">LabVIEW Runtime 2018 64-bit</a>。<br>
 				</p>
 				
 				<div class="product-sheet-box">
@@ -286,19 +286,19 @@
 				<div  class="product-sheet-box">
 					<a href="downloads/Pulsar-Vis and NIR program.zip" download="Pulsar-Vis and NIR program.zip">
 						<img class="product-sheet-img" src="images/TA-program-icon.ico" alt="software icon">
-						<p>TA spectrometer control software</p>			
+						<p>瞬态吸收光谱仪控制软件</p>			
 					</a>						
 				</div>
 				<div  class="product-sheet-box">
 					<a href="downloads/Pulsar TAM program-Andor.zip" download="Pulsar TAM program-Andor.zip">
 						<img class="product-sheet-img" src="images/TAM-andor-program-icon.ico" alt="software icon">
-						<p>TAM-Andor camera control software</p>			
+						<p>TAM Andor相机控制软件</p>			
 					</a>						
 				</div>
 				<div  class="product-sheet-box">
-					<a href="downloads/Helios data workup-v25.zip" download="Helios data workup-v25.zip">
+					<a href="downloads/PulsearSpec TA Data Workup v25.zip" download="PulsearSpec TA Data Workup v25.zip">
 						<img class="product-sheet-img" src="images/Data-processing-software-icon.ico" alt="software icon">
-						<p>TA data visualization software</p>			
+						<p>瞬态吸收数据可视化软件</p>			
 					</a>
 					<a href="data/TA数据处理软件说明书.pptx">
 						<img class="product-sheet-img" src="images/pulsar-data-processing-manual.png" alt="TA数据处理软件说明书">
@@ -306,9 +306,9 @@
 					</a>						
 				</div>
 				<div  class="product-sheet-box">
-					<a href="downloads/TAM data check v032.zip" download="Helios data workup-v25.zip">
+					<a href="downloads/TAM data check v032.zip" download="TAM data check v032.zip">
 						<img class="product-sheet-img" src="images/TAM-data-porcessing-icon.ico" alt="software icon">
-						<p>Transient absorption mapping data visualization</p>			
+						<p>瞬态吸收成像数据可视化软件</p>			
 					</a>						
 				</div>
 				<div class="youtube-video">
@@ -322,17 +322,11 @@
 		</div>
 	</div>
 	<footer>
-		<p>联系我们：<a href="mailto:minjunfeng@gmail.com">minjunfeng@gmail.com</a></p>
-    	<p><a href="#">隐私政策</a> | <a href="#">服务条款</a></p>
-    	<div>
-			<a href="#">Facebook</a> | 
-			<a href="#">Twitter</a>
-    	</div>
-    	<p>Site created by MJ</p>
+		<p>联系我们：<a href="mailto:info@pulsearspec.com">info@pulsearspec.com</a></p>
     	<p><a href="#">回到顶部</a></p>
-		<p>&copy; 2025 佛山市脉光谱科技有限公司</p>
+		<p>&copy; 2023&ndash;2026 佛山市脉光谱科技有限公司</p>
 		<p><a href="sitemap.xml">网站地图</a></p>
-		<p>地址: 佛山市禅城区张搓街道季华一路26号二座一幢1903</p>
+		<p>地址: 佛山市禅城区张槎街道季华一路26号二座一幢1903</p>
 	</footer>
     <script src="script/script.js"></script>
 </body>
