@@ -253,6 +253,24 @@ body{
     height: auto;
     margin-bottom: 10px;
 }
+/* Downloads shown in one row */
+.download-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 50px;
+    padding: 30px 20px;
+    background-color: #eeeeee;
+}
+.download-row .product-sheet-box {
+    width: 160px;
+    margin: 0;
+    padding: 0;
+    background: none;
+    justify-content: center;
+    text-align: center;
+}
 .youtube-video {
     display: flex;
     justify-content: center;
