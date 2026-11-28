@@ -7,6 +7,8 @@ let savedProjectionWavelength = [];
 let savedProjectionDelay = [];
 let xValue = 0;
 let yValue = 0;
+// Keep the modebar as it was in Plotly v1: no "Upload to Cloud" button sending data to a third party
+const plotConfig = { showSendToCloud: false };
 //log and linear shift for decay plot
 document.getElementById('toggleProjectionXAxis').addEventListener('click', function() {
     var button = this;
@@ -163,20 +165,28 @@ function transposeZ(z) {
 }
  //x is delya, y is wavelength
 function plotData(data) {
+    // A log axis cannot show delays <= 0. Plotly v1 silently skipped them, but newer
+    // versions draw nothing at all, so drop those rows before plotting on a log scale.
+    let y = data.y, z = data.z;
+    if (yAxisType === 'log') {
+        const keep = data.y.map((v, i) => v > 0 ? i : -1).filter(i => i !== -1);
+        y = keep.map(i => data.y[i]);
+        z = keep.map(i => data.z[i]);
+    }
     const plotData = [{
         x: data.x,
-        y: data.y,
-        z: data.z,
+        y: y,
+        z: z,
         type: 'contour',
     }];
 
     const layout = {
-        title: 'TA Contour Plot',
-        xaxis: { title: 'Wavelength / nm' },
-        yaxis: { title: 'Delay / ps', type: yAxisType }
+        title: { text: 'TA Contour Plot' },
+        xaxis: { title: { text: 'Wavelength / nm' } },
+        yaxis: { title: { text: 'Delay / ps' }, type: yAxisType }
     };
 
-    Plotly.newPlot('contourPlot', plotData, layout).then(() => {
+    Plotly.newPlot('contourPlot', plotData, layout, plotConfig).then(() => {
         const plotDiv = document.getElementById('contourPlot');
         plotDiv.on('plotly_click', function(clickData) {
             const pts = clickData.points[0];
@@ -218,12 +228,12 @@ function plotProjectionX(axisValues, zValues, divId, savedProjectionData) {
     }
 
     const layout = {
-        title: 'Projection along Wavelength',
-        xaxis: { type: 'linear' ,title: 'Wavelength / nm'},
+        title: { text: 'Projection along Wavelength' },
+        xaxis: { type: 'linear', title: { text: 'Wavelength / nm' } },
         showlegend: true,
     };
 
-    Plotly.newPlot(divId, projectionData, layout);
+    Plotly.newPlot(divId, projectionData, layout, plotConfig);
 }
 //Plot delay dynamics
 function plotProjectionY(axisValues, zValues, xScaleType, divId, savedProjectionData) {
@@ -246,12 +256,12 @@ function plotProjectionY(axisValues, zValues, xScaleType, divId, savedProjection
         });
     }
     const layout = {
-        title: 'Projection along Delay',
-        xaxis: { type: xScaleType ,title: 'Delay / ps'},
+        title: { text: 'Projection along Delay' },
+        xaxis: { type: xScaleType, title: { text: 'Delay / ps' } },
         showlegend: true,
     };
 
-    Plotly.newPlot(divId, projectionData, layout);
+    Plotly.newPlot(divId, projectionData, layout, plotConfig);
 }
 function plotProjectionsAtCenter(data) {
     const xCenterIndex = Math.floor(data.x_all.length / 2);
