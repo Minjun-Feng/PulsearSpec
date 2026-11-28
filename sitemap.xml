@@ -1,43 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 	<url>
-		<loc>https://www.pulsearspec.com</loc>
+		<loc>https://pulsearspec.com/</loc>
+		<lastmod>2026-11-27</lastmod>
 		<priority>1.00</priority>
-		<lastmod>2026-04-12</lastmod>
+		<xhtml:link rel="alternate" hreflang="en" href="https://pulsearspec.com/"/>
+		<xhtml:link rel="alternate" hreflang="zh-CN" href="https://pulsearspec.com/index-cn.html"/>
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://pulsearspec.com/"/>
 	</url>
 	<url>
-		<loc>https://www.pulsearspec.com/software-cn.html</loc>
-		<priority>0.50</priority>
-		<lastmod>2025-03-23</lastmod>
+		<loc>https://pulsearspec.com/index-cn.html</loc>
+		<lastmod>2026-11-27</lastmod>
+		<priority>0.80</priority>
+		<xhtml:link rel="alternate" hreflang="en" href="https://pulsearspec.com/"/>
+		<xhtml:link rel="alternate" hreflang="zh-CN" href="https://pulsearspec.com/index-cn.html"/>
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://pulsearspec.com/"/>
 	</url>
 	<url>
-		<loc>https://www.pulsearspec.com/software.html</loc>
-		<priority>0.50</priority>
-		<lastmod>2025-03-23</lastmod>
+		<loc>https://pulsearspec.com/spectrometer.html</loc>
+		<lastmod>2026-11-27</lastmod>
+		<priority>0.80</priority>
+		<xhtml:link rel="alternate" hreflang="en" href="https://pulsearspec.com/spectrometer.html"/>
+		<xhtml:link rel="alternate" hreflang="zh-CN" href="https://pulsearspec.com/spectrometer-cn.html"/>
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://pulsearspec.com/spectrometer.html"/>
 	</url>
 	<url>
-		<loc>https://www.pulsearspec.com/spectrometer-cn.html</loc>
-		<priority>0.50</priority>
-		<lastmod>2025-03-23</lastmod>
+		<loc>https://pulsearspec.com/spectrometer-cn.html</loc>
+		<lastmod>2026-11-27</lastmod>
+		<priority>0.80</priority>
+		<xhtml:link rel="alternate" hreflang="en" href="https://pulsearspec.com/spectrometer.html"/>
+		<xhtml:link rel="alternate" hreflang="zh-CN" href="https://pulsearspec.com/spectrometer-cn.html"/>
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://pulsearspec.com/spectrometer.html"/>
 	</url>
 	<url>
-		<loc>https://www.pulsearspec.com/phaselock.html</loc>
-		<priority>0.50</priority>
-		<lastmod>2025-03-23</lastmod>
+		<loc>https://pulsearspec.com/phaselock.html</loc>
+		<lastmod>2026-11-27</lastmod>
+		<priority>0.80</priority>
+		<xhtml:link rel="alternate" hreflang="en" href="https://pulsearspec.com/phaselock.html"/>
+		<xhtml:link rel="alternate" hreflang="zh-CN" href="https://pulsearspec.com/phaselock-cn.html"/>
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://pulsearspec.com/phaselock.html"/>
 	</url>
 	<url>
-		<loc>https://www.pulsearspec.com/index-cn.html</loc>
-		<priority>0.50</priority>
-		<lastmod>2026-04-12</lastmod>
+		<loc>https://pulsearspec.com/phaselock-cn.html</loc>
+		<lastmod>2026-11-27</lastmod>
+		<priority>0.80</priority>
+		<xhtml:link rel="alternate" hreflang="en" href="https://pulsearspec.com/phaselock.html"/>
+		<xhtml:link rel="alternate" hreflang="zh-CN" href="https://pulsearspec.com/phaselock-cn.html"/>
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://pulsearspec.com/phaselock.html"/>
 	</url>
 	<url>
-		<loc>https://www.pulsearspec.com/phaselock-cn.html</loc>
-		<priority>0.50</priority>
-		<lastmod>2025-09-21</lastmod>
+		<loc>https://pulsearspec.com/software.html</loc>
+		<lastmod>2026-11-27</lastmod>
+		<priority>0.60</priority>
+		<xhtml:link rel="alternate" hreflang="en" href="https://pulsearspec.com/software.html"/>
+		<xhtml:link rel="alternate" hreflang="zh-CN" href="https://pulsearspec.com/software-cn.html"/>
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://pulsearspec.com/software.html"/>
 	</url>
 	<url>
-		<loc>https://www.pulsearspec.com/tool.html</loc>
+		<loc>https://pulsearspec.com/software-cn.html</loc>
+		<lastmod>2026-11-27</lastmod>
+		<priority>0.60</priority>
+		<xhtml:link rel="alternate" hreflang="en" href="https://pulsearspec.com/software.html"/>
+		<xhtml:link rel="alternate" hreflang="zh-CN" href="https://pulsearspec.com/software-cn.html"/>
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://pulsearspec.com/software.html"/>
+	</url>
+	<url>
+		<loc>https://pulsearspec.com/tool.html</loc>
+		<lastmod>2026-11-27</lastmod>
 		<priority>0.50</priority>
-		<lastmod>2025-03-23</lastmod>
 	</url>
 </urlset>
