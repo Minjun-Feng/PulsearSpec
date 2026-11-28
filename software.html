@@ -3,16 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>PulsearSpec | software</title>
-	<meta name="dc.title" content="PulsearSpec | software">
-	<meta name="dc.description" content="PulsearSpec Pte. Ltd. offers femtosecond Transient Absorption Spectrometer Pulsar and cutting edge solutions for ultrafast laser technique.">
-	<meta name="dc.relation" content="https://pulsearspec.com/">
-	<meta name="dc.source" content="https://pulsearspec.com/">
+	<title>Transient Absorption Control and Data Processing Software | PulsearSpec</title>
+	<meta name="dc.title" content="Transient Absorption Control and Data Processing Software | PulsearSpec">
+	<meta name="dc.description" content="LabVIEW-based control and data processing software for the Pulsar transient absorption spectrometer — real-time visualization, chirp correction, and global fitting.">
+	<meta name="dc.relation" content="https://pulsearspec.com/software.html">
+	<meta name="dc.source" content="https://pulsearspec.com/software.html">
 	<meta name="dc.language" content="en_US">
-	<meta name="description" content="PulsearSpec Pte. Ltd. offers femtosecond Transient Absorption Spectrometer Pulsar and cutting edge solutions for ultrafast laser technique.">
+	<meta name="description" content="LabVIEW-based control and data processing software for the Pulsar transient absorption spectrometer — real-time visualization, chirp correction, and global fitting.">
 	<meta name="robots" content="index, follow">
 	<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 	<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="PulsearSpec | Control & Data Processing Software">
+	<meta property="og:description" content="LabVIEW-based control and data processing software for the Pulsar transient absorption spectrometer — real-time visualization, chirp correction, and global fitting.">
+	<meta property="og:url" content="https://pulsearspec.com/software.html">
+	<meta property="og:image" content="https://pulsearspec.com/images/Pulsar-FRONT.png">
+	<meta property="og:site_name" content="PulsearSpec">
+	<link rel="canonical" href="https://pulsearspec.com/software.html">
+	<link rel="alternate" hreflang="en" href="https://pulsearspec.com/software.html">
+	<link rel="alternate" hreflang="zh-CN" href="https://pulsearspec.com/software-cn.html">
+	<link rel="alternate" hreflang="x-default" href="https://pulsearspec.com/software.html">
 	<link rel="icon" type="image/x-icon" href="images/favicon.ico">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,12 +32,13 @@
 	<link rel="stylesheet" href="styles/general.css">
 	<link rel="stylesheet" href="styles/header.css">
 	<link rel="stylesheet" href="styles/contactForm.css">
+	<link rel="stylesheet" href="styles/theme.css">
 </head>
 <body>
     <div class="header">
 		<div class="navbar">
 			<div class="left-section">
-				<a href="index.html"><img class="logo-pic" src="images/logo.png"></a>
+				<a href="index.html"><img class="logo-pic" src="images/logo.png" alt="PulsearSpec logo"></a>
 				<div class="gradient-text">PulsearSpec</div>
 			</div>
 	
@@ -43,7 +54,7 @@
 							<li><a href="#"class="scroll-to-top">Software</a></li>
 						</ul>
 					</li>
-					<li><a href="tool.html">Tool</a></li>
+					<li><a href="tool.html">Data Viewer</a></li>
 					<li><a href="#contactForm" id="contactLink">Contact</a></li>
 					<li class="language-item">
 					  <a href="#">
@@ -51,7 +62,7 @@
 					  </a>
 					  <ul>
 						<li><a href="#">English</a></li>
-						<li><a href="software-cn.html">Chinese</a></li>
+						<li><a href="software-cn.html">中文</a></li>
 					  </ul>
 					</li>
 					<span id="close-menu-btn" class="material-symbols-outlined">close</span>
@@ -64,13 +75,14 @@
 	<div id="contactForm" class="modal">
 		<div class="form-container">
 			<form action="https://formspree.io/f/mnqeaayz" method="POST">
-				<h1>Contact Us Form</h1>
+				<h1>Contact us</h1>
 				<input type="text" name="First Name" id="firstName" placeholder="First Name" required>
 				<input type="text" name="Last Name" id="lastName" placeholder="Last Name" required>
 				<input type="email" name="email" id="email" placeholder="Email" required>
+				<input type="text" name="Institution" id="institution" placeholder="Institution / Company">
 				<input type="text" name="Mobile" id="mobile" placeholder="Mobile">
-				<h4>Type Your Message Here...</h4>
-				<textarea name="message" required></textarea>
+				<h4>Your message</h4>
+				<textarea name="message" placeholder="Tell us about your laser system and experiment" required></textarea>
 				<!-- Position the buttons next to each other in a div for better control -->
 				<div class="button-group">
 					<input type="submit" value="Send" id="sendButton">
@@ -79,13 +91,12 @@
 			</form>
 		</div>
 		</div>
-  	</div>
 	<div class="title-bar">
-		<p><a href="index.html">Products</a> <a href=""></a>/ Software </p>
+		<p><a href="index.html">Products</a> / Software </p>
 	</div>
 	<div class="PhaseLock-area">
 		<div class="software-pic-box">
-			<img class="software-pic-format" src="images/Software-1-TA photo.PNG" alt="Pump probe spectrometer picture">
+			<img class="software-pic-format" src="images/Software-1-TA photo.PNG" alt="TA control software screenshot">
 			<ul>
 				<li><img src="images/Software-1-TA photo.PNG" onmouseover="changeImage('images/Software-1-TA photo.PNG')"></li>
 				<li><img src="images/Software-2-TAM photo.PNG" onmouseover="changeImage('images/Software-2-TAM photo.PNG')"></li>
@@ -96,7 +107,7 @@
 		<div class="phase-lock-right">
 			<h3>Software for transient absorption setup</h3>	
 			<p>
-				Designed for pump-probe experiments, From intrument control to data processing and visualization.
+				Designed for pump-probe experiments: from instrument control to data processing and visualization.
 			</p>
 			<ul>
 				<li>Simple and efficient design</li>
@@ -111,12 +122,11 @@
 	<div class="phase-lock-intro">
 
 		<div class="content">
-			<h1 class="overview-main">Software download</h1>
+			<h1 class="overview-main">Software downloads</h1>
 			<p class="overview-main-p">
-				We provide data processing software 
-				that made result visualization fast and accurate. The software
-					requires <a href="https://www.ni.com/en/support/downloads/software-products/download.labview-runtime.html?srsltid=AfmBOopzsxnfI7m6HgZ0krZ8X49PQ2MA6CVJMm36FnOLkAdJJwrxBxPp">LabVIEW Runtime 2018 64-bit</a> installed in your PC in advance. Feel free to download and give it a try!<br>
+				Our software covers instrument control, data processing and visualization. It requires <a href="https://www.ni.com/en/support/downloads/software-products/download.labview-runtime.html?srsltid=AfmBOopzsxnfI7m6HgZ0krZ8X49PQ2MA6CVJMm36FnOLkAdJJwrxBxPp">LabVIEW Runtime 2018 64-bit</a> to be installed on your PC. It also runs without an instrument connected, so feel free to download and try it.<br>
 			</p>				
+			<div class="download-row">
 			<div  class="product-sheet-box">
 				<a href="downloads/Pulsar-Vis and NIR program.zip" download="Pulsar-Vis and NIR program.zip">
 					<img class="product-sheet-img" src="images/TA-program-icon.ico" alt="software icon">
@@ -130,32 +140,27 @@
 				</a>						
 			</div>
 			<div  class="product-sheet-box">
-				<a href="downloads/Helios data workup-v25.zip" download="Helios data workup-v25.zip">
+				<a href="downloads/PulsearSpec TA Data Workup v25.zip" download="PulsearSpec TA Data Workup v25.zip">
 					<img class="product-sheet-img" src="images/Data-processing-software-icon.ico" alt="software icon">
 					<p>TA data visualization software</p>			
 				</a>						
 			</div>
 			<div  class="product-sheet-box">
-				<a href="downloads/TAM data check v032.zip" download="Helios data workup-v25.zip">
+				<a href="downloads/TAM data check v032.zip" download="TAM data check v032.zip">
 					<img class="product-sheet-img" src="images/TAM-data-porcessing-icon.ico" alt="software icon">
-					<p>Transient asborption mapping data visualization</p>			
+					<p>TAM data visualization software</p>			
 				</a>						
+			</div>
 			</div>			
 		</div>
 	</div>
 
 	<footer>
-		<p>Contact us at: <a href="minjunfeng@gmail.com">minjunfeng@gmail.com</a></p>
-		<p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
-		<div>
-			<a href="#">Facebook</a> | 
-			<a href="#">Twitter</a>
-		</div>
-		<p>Site created by MJ</p>
+		<p>Contact us at: <a href="mailto:info@pulsearspec.com">info@pulsearspec.com</a></p>
 		<p><a href="#">Back to Top</a></p>
-		<p>&copy; 2023 PulsearSpec Pte. Ltd.</p>
+		<p>&copy; 2023&ndash;2026 Foshan PulsearSpec Technology Co., Ltd. (佛山市脉光谱科技有限公司)</p>
 		<p><a href="sitemap.xml">Sitemap</a></p>
-		<p>Address: 21 Nanyang Link, Singapore 637371</p>
+		<p>Address: Unit 1903, Tower 2, No. 26 Jihua 1st Road, Zhangcha Subdistrict, Chancheng District, Foshan, Guangdong, China</p>
 	</footer>
     <script src="script/script.js"></script>
 	<script src="script/software.js"></script>

@@ -77,9 +77,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Click to get contact form
 
-document.getElementById('contactLink').onclick = function() {
-    document.getElementById('contactForm').style.display = 'block';
-  };
+document.querySelectorAll('#contactLink, .contact-open').forEach(function(el) {
+    el.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.getElementById('contactForm').style.display = 'block';
+    });
+});
+
+// Links that open a tab on the Pulsar page, e.g. "View specs" in the hero
+document.querySelectorAll('[data-tab]').forEach(function(el) {
+    el.addEventListener('click', function(e) {
+        const tabs = document.querySelectorAll('.tab-btn');
+        const tab = tabs[parseInt(el.dataset.tab, 10)];
+        if (!tab) return;
+        e.preventDefault();
+        tab.click();
+        document.getElementById('product-tabs').scrollIntoView({behavior: 'smooth'});
+    });
+});
 document.getElementsByClassName('close')[0].onclick = function() {
 document.getElementById('contactForm').style.display = 'none';
 };
